@@ -1,0 +1,16 @@
+{
+  "budget": 3,
+  "bad_txn_code": "E_BAD_TXN",
+  "bad_party_code": "E_BAD_PARTY",
+  "dup_party_code": "E_DUP_PARTY",
+  "no_txn_code": "E_NO_TXN",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "txns": [], "verdicts": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "join", "txn": 1, "party": "a" },
+    { "id": 2, "kind": "vote", "txn": 1, "party": "a", "yes": true },
+    { "id": 3, "kind": "settle", "txn": 1 },
+    { "id": 4, "kind": "join", "txn": 2, "party": "a" },
+    { "id": 5, "kind": "vote", "txn": 2, "party": "a", "yes": false }
+  ]
+}
